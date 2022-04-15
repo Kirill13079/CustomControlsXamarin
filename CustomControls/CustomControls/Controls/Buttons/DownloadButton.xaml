@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomControls.Controls.Buttons.DownloadButton">
+
+    <StackLayout>
+        <Frame x:Name="DownloadBtn"
+               CornerRadius="100" 
+               Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="DownloadBtnTxt" 
+                       Grid.Column="0" 
+                       Grid.ColumnSpan="2" 
+                       TextColor="White"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+                <Image x:Name="DownloadBtnImg"  
+                       Grid.Column="1"
+                       HorizontalOptions="End" 
+                       Margin="10,0"/>
+            </Grid>
+        </Frame>
+    </StackLayout>
+
+</ContentView>
