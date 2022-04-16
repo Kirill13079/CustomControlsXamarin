@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:c="clr-namespace:CustomControls.Controls.Entrys"
+             x:Class="CustomControls.Controls.Entrys.CustomEntry">
+    <StackLayout>
+        <Label x:Name="TitleEntry"/>
+        <StackLayout Orientation="Horizontal">
+            <Image x:Name="ImageEntry" 
+                   Source="user" 
+                   WidthRequest="25"
+                   HeightRequest="25"/>
+            <c:EntryEyeliner x:Name="TextEntry" 
+                             HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </StackLayout>
+</ContentView>

@@ -1,20 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:CustomControls.Controls.Buttons"
+             xmlns:buttons="clr-namespace:CustomControls.Controls.Buttons"
+             xmlns:entrys="clr-namespace:CustomControls.Controls.Entrys"
              x:Class="CustomControls.MainPage">
 
     <StackLayout Orientation="Vertical" 
                  Spacing="10"
                  Padding="10">
 
-        <controls:DownloadButton ColorBtn="Red"
+        <buttons:DownloadButton ColorBtn="Red"
                                  TextBtn="Download"
                                  ImageBtn="download"/>
-        <controls:DownloadButton ColorBtn="Green"
+        <buttons:DownloadButton ColorBtn="Green"
                                  TextBtn="Proceed"
                                  ImageBtn="proceed"/>
-        
+        <entrys:CustomEntry TitleEntr="Title entry" 
+                            TextEntr="text text text" />
     </StackLayout>
 
 </ContentPage>

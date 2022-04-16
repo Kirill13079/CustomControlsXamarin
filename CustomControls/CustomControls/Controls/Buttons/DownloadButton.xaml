@@ -4,8 +4,8 @@
              x:Class="CustomControls.Controls.Buttons.DownloadButton">
 
     <StackLayout>
-        <Frame x:Name="DownloadBtn"
-               CornerRadius="100" 
+        <Frame x:Name="DownloadBtn" 
+               CornerRadius="100"
                Padding="10">
             <Grid>
                 <Grid.ColumnDefinitions>
