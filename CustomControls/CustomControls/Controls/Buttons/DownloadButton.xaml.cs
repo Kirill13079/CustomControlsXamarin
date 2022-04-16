@@ -32,6 +32,7 @@ namespace CustomControls.Controls.Buttons
                 default(string),
                 BindingMode.OneWay);
 
+
         public static readonly BindableProperty ImageProperty
             = BindableProperty.Create(
                 nameof(ImageBtn),

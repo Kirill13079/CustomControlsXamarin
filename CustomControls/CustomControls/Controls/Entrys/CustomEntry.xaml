@@ -2,8 +2,6 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:c="clr-namespace:CustomControls.Controls.Entrys"
-             xmlns:b="clr-namespace:CustomControls.Controls.Entrys.Behaviors"
-             xmlns:t="clr-namespace:CustomControls.Controls.Entrys.Triggers"
              x:Class="CustomControls.Controls.Entrys.CustomEntry">
     <StackLayout>
         <Label x:Name="TitleEntry"/>
@@ -13,18 +11,7 @@
                    WidthRequest="25"
                    HeightRequest="25"/>
             <c:EntryEyeliner x:Name="TextEntry" 
-                             HorizontalOptions="FillAndExpand"
-                             Keyboard="Numeric">
-                <c:EntryEyeliner.Behaviors>
-                    <b:EntryEyelinerBackgroundBehavior />
-                    <b:EntryEyelinerPrefixBehavior Prefix="+" />
-                </c:EntryEyeliner.Behaviors>
-                <c:EntryEyeliner.Triggers>
-                    <EventTrigger Event="Focused">
-                        <t:EntryEyelinerFocusTrigger />
-                    </EventTrigger>
-                </c:EntryEyeliner.Triggers>
-            </c:EntryEyeliner>
+                             HorizontalOptions="FillAndExpand"/>
         </StackLayout>
     </StackLayout>
 </ContentView>
